@@ -31,10 +31,10 @@ func _physics_process(_delta):
 	# This gives us the actual pixels to move this frame
 	# If direction is 1 and speed is 300, we get 300 pixels right
 	# If direction is -1 and speed is 300, we get -300 pixels (left)
-	
+	velocity.x = xDirection * xSpeed
 	
 	# TODO: Calculate Y movement the same way
-	
+	velocity.y = yDirection * ySpeed
 	
 	# TODO: Set the player's velocity (how fast they're moving)
 	# Godot's CharacterBody2D uses a velocity system
@@ -45,7 +45,6 @@ func _physics_process(_delta):
 	# Use if statements to check xDirection and yDirection
 	# Set facing to "right", "left", "down", or "up"
 	# Only update facing when actually moving (direction != 0)
-	
 	
 	# TODO: Update animation based on facing direction
 	# Call your update_animation() function here
