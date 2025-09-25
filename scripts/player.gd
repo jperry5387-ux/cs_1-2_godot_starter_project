@@ -9,7 +9,7 @@ var yDirection = 0
 var Coins = 0
 var Health = 1
 var Max_Health=10
-
+var projectile_preload=preload("res://scenes/projectile.tscn")
 # var health = ?
 # TODO: Add health system variables
 # var maxHealth = ?
@@ -50,13 +50,14 @@ func _physics_process(_delta):
 	# Only update facing when actually moving (direction != 0)
 	if xDirection >0:
 		facing = "right"
-	elif xDirection >0:
+	elif xDirection <0:
 		facing = "left"
 	elif yDirection >0:
-		facing = "up" 
-	elif yDirection >0:
-		facing = "down"
-	
+		facing = "down" 
+	elif yDirection <0:
+		facing = "up"
+	if Input.is_action_just_pressed ("ui_select"):
+		shoot()
 	# TODO: Update animation based on facing direction
 	update_animation()
 	
@@ -89,9 +90,10 @@ func change_health(amount):
 
 # TODO: Create shooting function
 func shoot():
+	var projectile=projectile_preload.instantiate()
+	
 	# TODO: Create a new projectile instance
 	# Look at the documentation examples in the lesson
-	
 	
 	# TODO: Set projectile position to player position
 	# Look at the "Setting Object Position" example
@@ -106,11 +108,12 @@ func shoot():
 	
 	
 	# TODO: Print shooting confirmation
-	# print("Shot projectile facing: ", facing)
+	print("Shot projectile facing: ", facing)
 	
 	pass
 var coins=0
 func change_coins (amount:int) :
 	coins += amount
 	print ("you have" + str(coins) + "coins")
+	
 	
