@@ -11,7 +11,7 @@ var coins = 0
 var is_attacking = false
 var attack_timer = .67
 @export var offset : Vector2 = Vector2(0, -25)
-
+var melee_box
 # TODO: Add health system variables
 var maxHealth = 10
 var health = maxHealth
@@ -31,14 +31,19 @@ func _physics_process(_delta):
 			if attack_timer<0:
 				is_attacking=false
 				attack_timer=.67
-		
-
-
-
-
-
-
-
+				
+	if xDirection > 0:
+		facing = "right"
+		melee_box.position = Vector2 (30,0)
+			elif xDirection < 0:
+		facing = "left"
+		melee_box.position = Vector2 (-30,0)
+			elif xDirection < 0:
+		facing = "up"
+		melee_box.position = Vector2 (0,-45)
+			elif xDirection > 0:
+		facing = "down"
+		melee_box.position = Vector2 (0,30)
 	# TODO: Get horizontal input (left/right keys)
 	# Input.get_axis checks two keys and gives us a number:
 	# - When LEFT is pressed: returns -1.0
