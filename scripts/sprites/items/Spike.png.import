@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lah76qx23g3n"
-path="res://.godot/imported/turret_projectile.png-941e87f681842757e82c9e5d9f6fbcb5.ctex"
+uid="uid://c1qgyb1qwjh00"
+path="res://.godot/imported/Spike.png-5bd3a327a7e2e41a51ecf32c89a40af1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/items/turret_projectile.png"
-dest_files=["res://.godot/imported/turret_projectile.png-941e87f681842757e82c9e5d9f6fbcb5.ctex"]
+source_file="res://scripts/sprites/items/Spike.png"
+dest_files=["res://.godot/imported/Spike.png-5bd3a327a7e2e41a51ecf32c89a40af1.ctex"]
 
 [params]
 

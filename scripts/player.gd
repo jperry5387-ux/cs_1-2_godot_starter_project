@@ -15,7 +15,7 @@ var attack_timer = .67
 var enemy
 # TODO: Add health system variables
 var maxHealth = 10
-var health = maxHealth
+var health = 10 
 
 func _ready() -> void:
 	pass
@@ -39,10 +39,10 @@ func _physics_process(_delta):
 
 	if xDirection > 0:
 		facing = "right"
-		melee_box.position = Vector2(30,0)
+		melee_box.position = Vector2(30,-15)
 	elif xDirection < 0:
 		facing = "left"
-		melee_box.position = Vector2(-30,0)
+		melee_box.position = Vector2(-30,-15)
 	if yDirection < 0:
 		facing = "up"
 		melee_box.position = Vector2(0,-45)
@@ -82,8 +82,7 @@ func _physics_process(_delta):
 	elif yDirection > 0:
 		facing = "down"
 	
-	if Input.is_action_just_pressed("ui_select"):
-		shoot()
+	
 	
 	# call the animation function
 	update_animation()

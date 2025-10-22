@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://cfbleyp5elq21"]
 
-[ext_resource type="Texture2D" uid="uid://dy23vpinyhffc" path="res://sprites/Tiles/MainLev2.0.png" id="1_rycfx"]
+[ext_resource type="Texture2D" uid="uid://dy23vpinyhffc" path="res://scripts/sprites/Tiles/MainLev2.0.png" id="1_rycfx"]
 [ext_resource type="PackedScene" uid="uid://dboamhf2yhiqx" path="res://scenes/player.tscn" id="2_mif00"]
 [ext_resource type="PackedScene" uid="uid://bmjwvyc35hdqh" path="res://scenes/key.tscn" id="3_katlb"]
 [ext_resource type="PackedScene" uid="uid://dpdol3rld7bec" path="res://scenes/locked_chest.tscn" id="4_hlolx"]

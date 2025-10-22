@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4655i7r7kgy6"
-path="res://.godot/imported/GameOver.png-91ec54b07aa55893dd30412535a32e22.ctex"
+uid="uid://bc1o4bggcgftu"
+path="res://.godot/imported/Trees+.png-550caea6d43eebbac6f58ddc34a74b5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/GameOver.png"
-dest_files=["res://.godot/imported/GameOver.png-91ec54b07aa55893dd30412535a32e22.ctex"]
+source_file="res://scripts/sprites/Tiles/Trees+.png"
+dest_files=["res://.godot/imported/Trees+.png-550caea6d43eebbac6f58ddc34a74b5a.ctex"]
 
 [params]
 

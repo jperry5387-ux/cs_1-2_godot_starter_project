@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sn2iyqhlcmeq"
-path="res://.godot/imported/slingshot_spritesheet.png-f6ffcbd8e39f40eb050b6d5726e70296.ctex"
+uid="uid://cgy67vkgin2hs"
+path="res://.godot/imported/player_spritesheet.png-bc37a17ced0c933147f317e7395bbef3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/slingshot_spritesheet.png"
-dest_files=["res://.godot/imported/slingshot_spritesheet.png-f6ffcbd8e39f40eb050b6d5726e70296.ctex"]
+source_file="res://scripts/sprites/player_spritesheet.png"
+dest_files=["res://.godot/imported/player_spritesheet.png-bc37a17ced0c933147f317e7395bbef3.ctex"]
 
 [params]
 

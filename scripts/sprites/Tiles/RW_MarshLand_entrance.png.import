@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b00prskio3o1q"
-path="res://.godot/imported/TX Tileset Grass.png-38a0227b20a052e5b161565750a122b8.ctex"
+uid="uid://dmimlbfdo7m8s"
+path="res://.godot/imported/RW_MarshLand_entrance.png-1c77959a92b313ecb1fc1e8a6e6b6ac2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Tiles/TX Tileset Grass.png"
-dest_files=["res://.godot/imported/TX Tileset Grass.png-38a0227b20a052e5b161565750a122b8.ctex"]
+source_file="res://scripts/sprites/Tiles/RW_MarshLand_entrance.png"
+dest_files=["res://.godot/imported/RW_MarshLand_entrance.png-1c77959a92b313ecb1fc1e8a6e6b6ac2.ctex"]
 
 [params]
 

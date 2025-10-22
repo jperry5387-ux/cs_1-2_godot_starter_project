@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmimlbfdo7m8s"
-path="res://.godot/imported/RW_MarshLand_entrance.png-634d04c9b724165e8faeba36df8e0a87.ctex"
+uid="uid://dsnljdmimsonc"
+path="res://.godot/imported/chest.png-e2435a1eedfc949222ebb5e8d00ac42a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Tiles/RW_MarshLand_entrance.png"
-dest_files=["res://.godot/imported/RW_MarshLand_entrance.png-634d04c9b724165e8faeba36df8e0a87.ctex"]
+source_file="res://scripts/sprites/items/chest.png"
+dest_files=["res://.godot/imported/chest.png-e2435a1eedfc949222ebb5e8d00ac42a.ctex"]
 
 [params]
 
