@@ -1,7 +1,8 @@
 extends CharacterBody2D
 @onready var _animation_player: AnimatedSprite2D = $AnimatedSprite2D
 var projectile_original = preload("res://scenes/projectile.tscn")
-
+var coin_original = preload("res://scenes/coin.tscn")
+var coin_created = false
 var xSpeed = 300.0
 var xDirection = 0
 var facing = "down"
@@ -16,7 +17,9 @@ var enemy
 # TODO: Add health system variables
 var maxHealth = 10
 var health = 10 
-
+var lever1
+var lever2
+var lever3
 func _ready() -> void:
 	pass
 func on_body_entered(body):
@@ -83,7 +86,13 @@ func _physics_process(_delta):
 		facing = "down"
 	
 	
+	if lever1 and lever2 and lever3 and !coin_created:
+		var collect_coin_clone = coin_original.instantiate()
 	
+		collect_coin_clone.global_position = position + Vector2(-5,-50)
+		coin_created = true
+	
+		get_tree().get_root().add_child(collect_coin_clone)
 	# call the animation function
 	update_animation()
 	
