@@ -1,5 +1,5 @@
-extends Node
-
+extends CharacterBody2D
+var projectile_original = preload("res://scenes/enemy_projectile.tscn")
 var timer = 1
 var health = 10
 var maxHealth = 10
@@ -7,8 +7,9 @@ var in_range = false
 var attacking = false
 var chasing = false
 func _process(delta: float) -> void:
+
 	timer -=delta
-	
+
 func change_health(_amount:int):
 	if timer<0:
 		health += _amount
@@ -76,3 +77,20 @@ func _on_ranged_body_exited(body: Node2D) -> void:
 	pass # Replace with function body.
 	if body.name == "player":
 		pass
+
+
+func shoot(target):
+	
+	var projectile_clone = projectile_original.instantiate()
+	
+	# TODO: Set projectile position to player position
+	projectile_clone.global_position = position
+	
+	
+	# TODO: Set projectile direction using facing variable
+	projectile_clone.set_direction(target.position)
+	
+	# TODO: Add projectile to the game world
+	get_tree().get_root().add_child(projectile_clone)
+
+pass
